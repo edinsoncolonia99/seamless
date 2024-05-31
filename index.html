@@ -38,7 +38,7 @@
             <button onclick="location.href='#contacto'">Conversemos</button>
         </div>
         <div class="header-imagen">
-            <img src="URL_DE_TU_IMAGEN" alt="Descripción de la imagen">
+            <img src="img/img_ppal_regresion.png" alt="analitica-regresion">
         </div>
     </div>
     
@@ -60,7 +60,7 @@
             </div>
             <div class="feature-box">
                 <h3>Dashboard</h3>
-                <p>Dashboard predefinidos para que veas la evolución de tu negocio y con las predicciones necesarias para alinear tus estrategias comerciales</p>
+                <p>Dashboard predefinidos para que analices la evolución de tu negocio y con las predicciones necesarias para alinear tus estrategias comerciales</p>
             </div>
         </div>
         <div class="contact-button-container">
@@ -142,6 +142,20 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
+
+    <script>
+        document.querySelectorAll('.menu-items li').forEach(item => {
+            item.addEventListener('click', () => {
+                const floatingWindow = document.querySelector('.floating-window');
+                if (floatingWindow.style.display === 'none' || !floatingWindow.style.display) {
+                    floatingWindow.style.display = 'block';
+                } else {
+                    floatingWindow.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
     <footer>
         <div class="footer-content">
             <p>SEAMLESS - Visualiza tu negocio. Todos los @ derechos reservados<br> Colombia, Ecuador.</p>
