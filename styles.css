@@ -229,14 +229,14 @@ section {
     min-height: 100vh;
     margin-bottom: 0px;
     padding-top: 30px;
+
 }
-
-
 
 .indicador-header {
     padding: 5px 60px; 
     margin-bottom: 0px; 
     margin-top: 5px;
+    background-color: #f4f4f4;
 }
 
 .left-box, .right-box {
@@ -274,6 +274,26 @@ section {
 }
 
 /* Finaliza */
+
+/* soluciones */
+
+.soluciones h1 {
+    font-size: 45px;
+}
+
+.subtitulo-ind p{
+    color: #adb5bd;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #adb5bd;
+    border-radius: 15px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    background: linear-gradient(to right, #051923, #3a0ca3);
+}
 
 /* Inicia formulario */
 #contacto {
@@ -334,48 +354,59 @@ footer p {
     margin: 0;
 }
 
+
+/* Media query para dispositivos móviles */
 @media (max-width: 768px) {
+    /* Alineación del header en columna */
     header {
         flex-direction: column;
     }
 
+    /* Alineación centrada del texto e imagen del header */
     .header-imagen, .header-text {
         text-align: center;
     }
 
+    /* Alineación de las características en columna */
     .features {
         flex-direction: column;
     }
 
+    /* Reducción del ancho de los feature-box */
     .feature-box {
         width: 80%;
     }
 
+    /* Ajuste del ancho de la caja de ventaja competitiva */
     .ventaja-competitiva {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
     }
 
+    /* Alineación de los indicadores en columna */
     .contenedor-indicadores {
         flex-direction: column;
     }
 
+    /* Ajuste del ancho de las cajas izquierda y derecha */
     .left-box, .right-box {
         width: 100%;
     }
 
-    /* header */
+    /* Alineación del menú en columna */
     nav {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    /* Espaciado entre elementos del menú */
     .menu-items {
         flex-direction: column;
         gap: 10px;
     }
 
+    /* Posicionamiento de la ventana flotante */
     .floating-window {
         top: 100px;
         right: 10px;
